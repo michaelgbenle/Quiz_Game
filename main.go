@@ -24,6 +24,7 @@ func main() {
 }
 func parseLines(lines [][]string) []problem {
 	ret := make([]problem, len(lines))
+	return ret
 }
 
 type problem struct {
