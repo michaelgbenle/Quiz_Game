@@ -27,6 +27,7 @@ func main() {
 
 	problems := parseLines(csvLines)
 	timer := time.NewTimer(time.Duration(*timeLimit) * time.Second)
+	<-timer.C
 	var correct int
 	for i, p := range problems {
 		fmt.Printf("problem #%d: %s= \n", i+1, p.question)
