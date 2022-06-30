@@ -25,6 +25,7 @@ func main() {
 	for i, p := range problems {
 		fmt.Printf("problem #%d: %s= \n", i+1, p.question)
 		var ans string
+		fmt.Scanf("%s")
 
 	}
 }
