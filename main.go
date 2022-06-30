@@ -29,9 +29,9 @@ func main() {
 		if ans == p.answer {
 			fmt.Println("Correct!")
 		}
-
 	}
 }
+
 func parseLines(lines [][]string) []problem {
 	ret := make([]problem, len(lines))
 	for i, line := range lines {
