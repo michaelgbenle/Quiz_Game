@@ -22,7 +22,9 @@ func main() {
 	}
 	fmt.Println(csvLines)
 }
-func parseLines(lines [][]string) []problem {}
+func parseLines(lines [][]string) []problem {
+	ret := make([]problem, len(lines))
+}
 
 type problem struct {
 	question string
