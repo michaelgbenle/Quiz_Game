@@ -26,6 +26,9 @@ func main() {
 		fmt.Printf("problem #%d: %s= \n", i+1, p.question)
 		var ans string
 		fmt.Scanf("%s\n", &ans)
+		if ans == p.answer {
+
+		}
 
 	}
 }
