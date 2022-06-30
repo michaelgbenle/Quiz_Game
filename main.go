@@ -20,16 +20,17 @@ func main() {
 	if err != nil {
 		log.Fatal("Cannot read csv")
 	}
+	fmt.Println(csvLines)
 
-	problems := parseLines(csvLines)
-	for i, p := range problems {
-		fmt.Printf("problem #%d: %s= \n", i+1, p.question)
-		var ans string
-		fmt.Scanf("%s\n", &ans)
-		if ans == p.answer {
-			fmt.Println("Correct!")
-		}
-	}
+	//problems := parseLines(csvLines)
+	//for i, p := range problems {
+	//	fmt.Printf("problem #%d: %s= \n", i+1, p.question)
+	//	var ans string
+	//	fmt.Scanf("%s\n", &ans)
+	//	if ans == p.answer {
+	//		fmt.Println("Correct!")
+	//	}
+	//}
 }
 
 func parseLines(lines [][]string) []problem {
