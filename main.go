@@ -31,7 +31,7 @@ func main() {
 	var correct int
 	for i, p := range problems {
 		select {
-			<-timer.C
+			case <-timer.C
 		}
 		fmt.Printf("problem #%d: %s= \n", i+1, p.question)
 		var ans string
