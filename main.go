@@ -30,6 +30,7 @@ func main() {
 		fmt.Scanf("%s\n", &ans)
 		if ans == p.answer {
 			fmt.Println("Correct!")
+			correct++
 		}
 	}
 }
