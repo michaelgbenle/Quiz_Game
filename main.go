@@ -22,3 +22,6 @@ func main() {
 	}
 	fmt.Println(csvLines)
 }
+
+type problem struct {
+}
