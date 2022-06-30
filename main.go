@@ -1,9 +1,12 @@
 package main
 
-import "flag"
+import (
+	"flag"
+	"os"
+)
 
 func main() {
 	csvFilename := flag.String("csv", "questions.csv", "a csv file for questions and answers")
 	flag.Parse()
-	_ = csvFilename
+	file, err := os.Open(*csvFilename)
 }
