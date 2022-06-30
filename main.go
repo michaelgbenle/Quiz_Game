@@ -34,14 +34,17 @@ func main() {
 		case <-timer.C:
 			fmt.Printf("you scored %d out of %d.\n", correct, len(problems))
 			return
+		default:
+			fmt.Printf("problem #%d: %s= \n", i+1, p.question)
+			var ans string
+			fmt.Scanf("%s\n", &ans)
+			if ans == p.answer {
+				fmt.Println("Correct!")
+				correct++
+			}
+
 		}
-		fmt.Printf("problem #%d: %s= \n", i+1, p.question)
-		var ans string
-		fmt.Scanf("%s\n", &ans)
-		if ans == p.answer {
-			fmt.Println("Correct!")
-			correct++
-		}
+
 	}
 	fmt.Printf("you scored %d out of %d.\n", correct, len(problems))
 }
