@@ -24,6 +24,9 @@ func main() {
 }
 func parseLines(lines [][]string) []problem {
 	ret := make([]problem, len(lines))
+	for i, line := range lines {
+
+	}
 	return ret
 }
 
