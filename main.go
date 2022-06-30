@@ -14,5 +14,5 @@ func main() {
 	if err != nil {
 		log.Fatalf("unable to open file %v", *csvFilename)
 	}
-	r := csv.NewReader(file)
+	reader := csv.NewReader(file)
 }
