@@ -35,6 +35,7 @@ func main() {
 		go func() {
 			var ans string
 			fmt.Scanf("%s\n", &ans)
+			answerCh <- ans
 		}()
 		select {
 		case <-timer.C:
