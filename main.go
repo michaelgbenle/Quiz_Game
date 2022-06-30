@@ -13,4 +13,5 @@ func main() {
 	if err != nil {
 		log.Fatal("unable to open file")
 	}
+	_ = file
 }
