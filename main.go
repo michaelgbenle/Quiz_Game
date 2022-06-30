@@ -33,6 +33,7 @@ func main() {
 		select {
 		case <-timer.C:
 			fmt.Printf("you scored %d out of %d.\n", correct, len(problems))
+			return
 		}
 		fmt.Printf("problem #%d: %s= \n", i+1, p.question)
 		var ans string
