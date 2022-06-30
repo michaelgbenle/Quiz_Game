@@ -6,10 +6,12 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strings"
 )
 
 func main() {
 	csvFilename := flag.String("csv", "questions.csv", "a csv file for questions and answers")
+	timeLimit := flag.Int()
 	flag.Parse()
 	file, err := os.Open(*csvFilename)
 	if err != nil {
