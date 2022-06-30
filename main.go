@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/csv"
 	"flag"
+	"fmt"
 	"log"
 	"os"
 )
@@ -22,6 +23,7 @@ func main() {
 
 	problems := parseLines(csvLines)
 	for i, p := range problems {
+		fmt.Println()
 
 	}
 }
