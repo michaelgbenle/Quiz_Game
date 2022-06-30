@@ -33,7 +33,7 @@ func main() {
 			correct++
 		}
 	}
-	fmt.Printf("you scored %d out of %d")
+	fmt.Printf("you scored %d out of %d.\n")
 }
 
 func parseLines(lines [][]string) []problem {
