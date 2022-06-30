@@ -32,7 +32,8 @@ func main() {
 	for i, p := range problems {
 		fmt.Printf("problem #%d: %s= ", i+1, p.question)
 		go func() {
-
+			var ans string
+			fmt.Scanf("%s\n", &ans)
 		}()
 		select {
 		case <-timer.C:
