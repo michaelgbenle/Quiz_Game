@@ -32,6 +32,7 @@ func main() {
 	for i, p := range problems {
 		select {
 		case <-timer.C:
+			fmt.Printf("you scored %d out of %d.\n", correct, len(problems))
 		}
 		fmt.Printf("problem #%d: %s= \n", i+1, p.question)
 		var ans string
