@@ -20,7 +20,9 @@ func main() {
 	if err != nil {
 		log.Fatal("Cannot read csv")
 	}
-	fmt.Println(csvLines)
+
+	problems := parseLines(csvLines)
+	fmt.Println(problems)
 }
 func parseLines(lines [][]string) []problem {
 	ret := make([]problem, len(lines))
