@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/csv"
 	"flag"
 	"log"
 	"os"
@@ -13,5 +14,5 @@ func main() {
 	if err != nil {
 		log.Fatalf("unable to open file %v", *csvFilename)
 	}
-	_ = file
+	r := csv.NewReader(file)
 }
