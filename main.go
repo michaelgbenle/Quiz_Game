@@ -11,6 +11,6 @@ func main() {
 	flag.Parse()
 	file, err := os.Open(*csvFilename)
 	if err != nil {
-		log.Println("unable to open file")
+		log.Fatal("unable to open file")
 	}
 }
