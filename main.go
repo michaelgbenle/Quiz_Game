@@ -31,6 +31,7 @@ func main() {
 	var correct int
 	for i, p := range problems {
 		fmt.Printf("problem #%d: %s= ", i+1, p.question)
+		answerCh :=
 		go func() {
 			var ans string
 			fmt.Scanf("%s\n", &ans)
