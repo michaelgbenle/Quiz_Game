@@ -23,7 +23,7 @@ func main() {
 
 	problems := parseLines(csvLines)
 	for i, p := range problems {
-		fmt.Println()
+		fmt.Printf("problem #%d: %s= \n")
 
 	}
 }
