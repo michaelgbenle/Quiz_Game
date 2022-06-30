@@ -41,6 +41,8 @@ func main() {
 		case <-timer.C:
 			fmt.Printf("you scored %d out of %d.\n", correct, len(problems))
 			return
+		case answer := <-answerCh:
+
 		default:
 			fmt.Printf("problem #%d: %s= ", i+1, p.question)
 			var ans string
