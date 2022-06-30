@@ -22,6 +22,7 @@ func main() {
 	}
 	fmt.Println(csvLines)
 }
+func parseLines() []problem {}
 
 type problem struct {
 	question string
