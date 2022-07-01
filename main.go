@@ -39,10 +39,9 @@ func main() {
 		}()
 		select {
 		case <-timer.C:
-			fmt.Printf("you scored %d out of %d.\n", correct, len(problems))
+			fmt.Printf("\n You scored %d out of %d.\n", correct, len(problems))
 			return
 		case ans := <-answerCh:
-
 
 			if ans == p.answer {
 				fmt.Println("Correct!")
