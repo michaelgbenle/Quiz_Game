@@ -41,7 +41,7 @@ func main() {
 		case <-timer.C:
 			fmt.Printf("you scored %d out of %d.\n", correct, len(problems))
 			return
-		case answer := <-answerCh:
+		case ans := <-answerCh:
 
 
 			if ans == p.answer {
