@@ -43,10 +43,7 @@ func main() {
 			return
 		case answer := <-answerCh:
 
-		default:
-			fmt.Printf("problem #%d: %s= ", i+1, p.question)
-			var ans string
-			fmt.Scanf("%s\n", &ans)
+
 			if ans == p.answer {
 				fmt.Println("Correct!")
 				correct++
